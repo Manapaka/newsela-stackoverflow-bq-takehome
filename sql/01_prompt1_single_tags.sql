@@ -31,6 +31,7 @@ Outputs:
 -- -----------------------------
 DECLARE min_questions_per_tag INT64 DEFAULT 200;  -- raise to reduce noise, lower to include more tags
 DECLARE target_year INT64 DEFAULT EXTRACT(YEAR FROM CURRENT_DATE());
+-- DECLARE target_year INT64 DEFAULT 2022; -- 2022 year is the last in dataset
 
 -- -----------------------------
 -- BASE CTEs
