@@ -24,6 +24,7 @@ Output:
 -- PARAMETERS
 -- -----------------------------
 DECLARE end_year INT64 DEFAULT EXTRACT(YEAR FROM CURRENT_DATE());
+-- DECLARE end_year INT64 DEFAULT 2022; -- 2022 year is the last in dataset
 DECLARE start_year INT64 DEFAULT EXTRACT(YEAR FROM DATE_SUB(CURRENT_DATE(), INTERVAL 9 YEAR));
 
 WITH
